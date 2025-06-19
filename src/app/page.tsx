@@ -9,8 +9,40 @@ import { FaDna } from "react-icons/fa";
 import { RxLetterCaseCapitalize } from "react-icons/rx";
 import { BiMath } from "react-icons/bi";
 import { GiFruitBowl } from "react-icons/gi";
+import { PiSpinnerBall } from "react-icons/pi";
+import { TbTextGrammar } from "react-icons/tb";
+import { SiKahoot } from "react-icons/si";
+import { PiEyes } from "react-icons/pi";
+import { ImSpinner4 } from "react-icons/im";
 
 
+const juegos = [
+  {
+    nombre:"Ruleta",
+    icon:<ImSpinner4 className="text-2xl mr-4"/>,
+    url:"https://es.piliapp.com/random/wheel/"
+  },
+  {
+    nombre:"Pelotas para exposición",
+    icon: <PiSpinnerBall className="text-2xl mr-4"/>,
+    url:"https://www.online-stopwatch.com/random-name-pickers/crane-machine-name-picker/"
+  },
+  {
+    nombre:"Crucigrama",
+    icon:<TbTextGrammar className="text-2xl mr-4"/>,
+    url:"https://wordwall.net/es/resource/34334990/juego/crucigrama-facil-para-niños-de-12-años"
+  },
+  {
+    nombre:"Kahoot! (Matemáticas - Multiplicación Básica)",
+    icon:<SiKahoot className="text-2xl mr-4"/>,
+    url:"https://create.kahoot.it/share/las-tablas-de-multiplicar-ii/bd0530b1-b0a8-4206-a7db-7199e5ec34be"
+  },
+  {
+    nombre:"Kahoot! (Ciencias Naturales - Célula y ADN)",
+    icon:<SiKahoot className="text-2xl mr-4"/>,
+    url:" https://create.kahoot.it/share/celula-y-adn/68e4a5f7-5356-4bfb-8fbf-4537dcefb04c"
+  },
+]
 
 
 const recursos = [
@@ -111,6 +143,29 @@ export default function Home() {
               </h2>
               <p className="text-sm text-gray-600  flex items-center mt-3">
                 <span><MdOndemandVideo className="text-xl mr-2"/></span>Ver video educativo →
+              </p>
+            </a>
+          ))}
+        </div>
+        <div className="mt-8">
+          <h2 className="text-center text-xl font-bold">Juegos educativos</h2>
+          <p className="mt-3">Usa Juegos o Dinámicas Kahoot, Quizizz, juegos de roles, bingo de conceptos, escape room educativo.</p>
+          <p className="mt-2">¡Aquí te dejamos algunos links de plantillas!</p>
+        </div>
+         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5 ">
+          {juegos.map((j) => (
+            <a
+              key={j.url}
+              href={j.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white p-4 rounded-xl  hover:shadow-lg transition border-blue-200 border shadow-md shadow-emerald-950 hover:bg-slate-100 cursor-pointer "
+            >
+              <h2 className="text-lg font-semibold text-blue-900 flex items-center">
+                {j.icon} {j.nombre} 
+              </h2>
+              <p className="text-sm text-gray-600  flex items-center mt-3">
+                <span><PiEyes className="text-xl mr-2"/></span>Ver plantilla →
               </p>
             </a>
           ))}
