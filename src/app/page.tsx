@@ -105,7 +105,7 @@ export default function Home() {
        
         </p>
         <div className="flex justify-center">
-          <Image src="/metacognicion.jpg" alt="metacognicion" width={500} height={500}/>
+          <Image src="/metacognicion.jpg" alt="metacognicion" className="rounded-xl" width={500} height={500}/>
         </div>
         <div className="my-4">
 
@@ -170,6 +170,41 @@ export default function Home() {
             </a>
           ))}
         </div>
+
+        <div className="mt-8">
+          <h2 className="text-center text-xl font-bold">Llaves de pensamiento</h2>
+          <p className="my-2">
+          Las Llaves de Pensamiento son herramientas que ayudan a promover el pensamiento, la profundización y la comprensión, así como a construir el lenguaje de pensamiento. Se suelen usar en conjunto, mediante la interacción mediante preguntas y explorar cualquier elemento: objetos de su alrededor, seres vivos,el clima, imágenes y cuadros, al mirar por la ventana o al salir al exterior. 
+          </p>
+
+          
+
+           <p className="mt-4"><strong className="font-bold">¿Cómo se usan?</strong> Deberán darle las opciones de color al estudiante y realizar una pregunta de acuerdo al tema. </p>
+
+
+<p className="mt-5"><span className="font-bold underline">CAMBIO</span>: <br></br>  ¿Cómo está cambiando? ¿Qué podría pasar si…? ¿Cuál es la secuencia? ¿Cómo puedes convertir esto
+en algo diferente?</p>
+
+        <p className="mt-2"><span className="font-bold underline">CAUSA-EFECTO:</span> <br></br>¿Por qué es cómo es? ¿Qué viene? ¿Por qué se hizo? ¿Qué pasaría si?</p>
+
+   <p className="mt-2"><span className="font-bold underline">CONEXIÓN:</span> <br></br>¿Dónde podría verlo o utilizarlo de nuevo? ¿Qué es algo nuevo y diferente? ¿Cómo es esto algo
+parecido a algo que he visto antes?</p>
+        <p className="mt-2"><span className="font-bold underline">EMOCIÓN:</span><br></br> ¿Qué sientes? ¿Qué emoción te produce…? ¿Cómo reacciona tu cuerpo a esta emoción? ¿Qué puedes hacer con esta emoción? ¿Qué sentirán los otros?</p>
+      
+
+                  <div className="flex justify-center mt-4">
+          <Image src="/llaves.jpg" alt="llaves" className="rounded-xl" width={500} height={500}/>
+        </div>
+       
+
+        <p className="mt-5"><span className="font-bold underline">FORMA</span>: <br></br> ¿Cómo es? ¿Puedes describirlo?</p>
+        <p className="mt-2"><span className="font-bold underline">FUNCIÓN:</span> <br></br>¿Cómo funciona? ¿Qué sirve?</p>
+   <p className="mt-2"><span className="font-bold underline">PUNTO DE VISTA:</span> <br></br> ¿Cuáles son los puntos de vista? ¿Cómo crees que… se siente ahora? ¿Cómo te sentirías si fueras…?</p>
+        <p className="mt-2"><span className="font-bold underline">REFLEXIÓN:</span><br></br> ¿Cómo sabes?</p>
+       <p className="mt-2"><span className="font-bold underline"> RESPONSABILIDAD:</span> <br /> ¿Cuál es mi responsabilidad? ¿Por qué es mi forma de actuar importante? ¿Qué puedo hacer? ¿Qué relación tengo yo con esto? ¿Cómo me impacta?</p>
+         
+        </div>
+
       </div>
     </main>
   );
